@@ -16,3 +16,4 @@ Modifier `config/config.php` si nécessaire (user/pass MySQL).
 - Admin: `admin@smartpizzaria.com` / `admin123`
 - Client: `mohamed@gmail.com` / `client123`
 "# pizzaria" 
+"# pizzaria" 
