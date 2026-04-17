@@ -16,7 +16,7 @@
                     </div>
                     <button class="btn btn-dark w-100" type="submit">Se connecter</button>
                 </form>
-                <div class="mt-3 small">Pas de compte? <a href="register.php">Créer un compte</a></div>
+                <div class="mt-3 small">Pas de compte? <a href="/pizzaria/auth/register.php">Créer un compte</a></div>
             </div>
         </div>
     </div>

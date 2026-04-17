@@ -16,7 +16,7 @@ function is_logged_in(): bool
 function require_login(): void
 {
     if (!is_logged_in()) {
-        redirect('login.php');
+        redirect('/pizzaria/auth/login.php');
     }
 }
 
@@ -26,7 +26,7 @@ function is_admin(): bool
     if (!$user) {
         return false;
     }
-    $role = strtolower(trim((string)($user['role'] ?? 'client')));
+    $role = strtolower(trim((string) ($user['role'] ?? 'client')));
     return $role === 'admin';
 }
 
@@ -35,7 +35,7 @@ function require_admin(): void
     require_login();
     if (!is_admin()) {
         flash_set('danger', 'Accès refusé.');
-        redirect('index.php');
+        redirect('/pizzaria/auth/index.php');
     }
 }
 

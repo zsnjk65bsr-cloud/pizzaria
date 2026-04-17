@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/includes/init.php';
+require_once __DIR__ . '/../includes/init.php';
 
 require_login();
 
@@ -8,7 +8,7 @@ $pdo = db();
 $ingredients = $pdo->query('SELECT * FROM ingredients WHERE disponible = 1 ORDER BY nom ASC')->fetchAll();
 $types_pate = $pdo->query('SELECT * FROM types_pate ORDER BY nom ASC')->fetchAll();
 
-$config = require __DIR__ . '/config/config.php';
+$config = require __DIR__ . '/../config/config.php';
 $base_prices = $config['custom_pizza_base_price'];
 
 if (is_post() && post('action') === 'add_custom') {

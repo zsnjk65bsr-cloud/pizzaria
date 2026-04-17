@@ -5,7 +5,7 @@ return [
     'base_url' => '',
     'db' => [
         'host' => 'localhost',
-        'name' => 'pizzaria',
+        'name' => 'smart_pizzaria',
         'user' => 'root',
         'pass' => '',
         'charset' => 'utf8mb4',

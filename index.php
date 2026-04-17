@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/includes/init.php';
 
-$page_title = 'Accueil — Smart Pizzaria';
-
-render('home/index', compact('page_title'));
+// Page par défaut
+require_once __DIR__ . '/pages/home.php';
+?>
